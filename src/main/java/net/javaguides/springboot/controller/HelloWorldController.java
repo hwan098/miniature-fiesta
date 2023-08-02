@@ -1,9 +1,19 @@
+
 package net.javaguides.springboot.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller //이 컨트롤러 클래스를 MVC컨트롤러로 만들겠다.
-@ResponseBody //JAVA 객테에서 JSON으로 응답을 변환.
+@RestController
 public class HelloWorldController {
+
+    //HTTP GET REQUEST
+    //8080:/hello-world
+
+    @GetMapping("/hello-world")
+    public String helloWorld(){
+        return "hello World";
+    }
 }
