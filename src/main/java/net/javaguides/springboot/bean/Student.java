@@ -3,12 +3,12 @@ package net.javaguides.springboot.bean;
 public class Student {
     private int id;
     private String firstName;
-    private String secondName;
+    private String lastName;
 
     public Student(int id, String firstName, String secondName) {
         this.id = id;
         this.firstName = firstName;
-        this.secondName = secondName;
+        this.lastName = secondName;
     }
 
     public int getId() {
@@ -27,11 +27,11 @@ public class Student {
         this.firstName = firstName;
     }
 
-    public String getSecondName() {
-        return secondName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
