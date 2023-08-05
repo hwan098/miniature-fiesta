@@ -24,4 +24,5 @@
 `@DeleteMapping` : 해당 메소드를 DELETE 방식으로 매핑
 
 `@RequestMapping` : 모든 메소드마다 공통의 URL을 정의해서 메소드마다 동일한 URL이 반복되지 않게 설정해주는 역할
+
 ResponseEntity : ResponseEntity 클래스를 사용하면, 결과값, 상태코드,  헤더값을 모두 프론트에 넘겨줄 수 있고, 에러코드 또한 섬세하게 설정해서 보내줄 수 있다는 장점이 있음
